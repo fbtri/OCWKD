@@ -1,0 +1,50 @@
+/* Set background color of body and all parent elements to black */
+body, html, #root {
+    background-color: black;
+  }
+  
+  /* TheWeekend.css */
+  
+  /* Container for images */
+  .theweekend {
+    margin: 60px; /* Corrected missing units */
+    padding: 0px; /* Corrected missing units */
+    background-color: black;
+    column-count: 6; /* Divide into 5 columns */
+    column-gap: 20px; /* Adjust the gap between columns */
+  }
+  
+  /* Container for each image */
+  .image-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px; /* Add margin between images vertically */
+    break-inside: avoid; /* Prevent breaking inside image containers */
+  }
+  
+  /* Styles for images */
+  .image-container img {
+    width: 100%;
+    height: auto; /* Adjusted height to maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for zoom effect */
+    cursor: pointer;
+  }
+  
+  /* Zoom effect for selected image */
+  .image-container.selected img {
+    width: 90vw; /* Adjust the width as needed */
+    height: auto;
+    max-height: 90vh; /* Limit the height to 100% of the viewport height */
+    object-fit: contain; /* Maintain aspect ratio while fitting within container */
+    z-index: 2; /* Ensure selected image appears on top */
+  }
+  
+  /* Centered display for selected image */
+  .selected {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Ensure selected image is on top of everything */
+  }
+  

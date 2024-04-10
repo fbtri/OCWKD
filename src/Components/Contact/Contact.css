@@ -1,0 +1,28 @@
+.centered-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Centers the content vertically */
+}
+
+.centered-text p {
+  font-size: 25px; /* Adjust the font size as needed */
+  color: white;
+  
+}
+
+.centered-text {
+  display: flex;
+  flex-direction: column; /* Stack the items vertically */
+  justify-content: center; /* Center the content vertically */
+  align-items: center; /* Center the content horizontally */
+  height: 100vh; /* Set height to the viewport height for vertical centering */
+  color: white;
+}
+
+.centered-text p {
+  margin: 10px 0; /* Add vertical margin between the paragraphs */
+  font-size: 15px; /* Adjust the font size as needed */
+  color: white;
+}
+
